@@ -1,0 +1,18 @@
+[project]
+name = "ppt-maker"
+version = "0.1.0"
+description = "Turn a freeform prompt and a blob of raw data into a styled, non-generic .pptx deck"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.1.3",
+    "gunicorn>=23.0.0",
+    "google-genai>=1.0.0",
+    "python-pptx>=1.0.2",
+    "python-dotenv>=1.0.1",
+    "pydantic>=2.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+]
